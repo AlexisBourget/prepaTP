@@ -31,6 +31,11 @@ h1 {
     font-size:12vw;
 }
 
+.pHorizon {
+    font-weight: 800;
+    text-align: right;
+}
+
 #random-image {
     width: 100%;
 }
