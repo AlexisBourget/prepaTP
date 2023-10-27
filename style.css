@@ -1,5 +1,51 @@
 .navbar {
     background-color: green;
+    display: flex;
+}
+
+.navContainer {
+    display: flex;
+}
+
+.navBarItems {
+    display: flex;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.row {
+    display: flex;
+}
+
+/* .card {
+    width: 30%;
+} */
+
+.randomImage {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row.number2 {
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 90%;
+    }
 }
 
 .inspiration.img {
@@ -44,6 +90,10 @@ h1 {
     text-align: center;
     font-weight: 800;
     height: 100%;
+}
+
+#joke-container p {
+    color: green;
 }
 
 .imageAndJoke-container {
