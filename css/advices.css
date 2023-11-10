@@ -1,38 +1,5 @@
-.wrapper {
-    display: flex;
-}
-
-#bloc_gauche, 
-#bloc_droite {
-    width: 50%;
-    
-    /* pour qu'un bloc occupe toute la hauteur de la fenêtre du navigateur : */
-    height: 100vh;
-
-    /* l'unité vh = Viewport Height */
-    /* l'unité vw = Viewport Width */
-}
-
-#bloc_gauche {
-    padding: 25px;
-    background-image: url("../images/nicole.jpg");
-
-    /* background-size: cover permet d'indiquer que l'image doit "couvrir" toute la largeur dispobible (elle sera rognée verticalement si ça dépasse) */
-    background-size: cover;
-
-    /* background-position: center nous permet de centrer l'image horizontalement et verticalement */
-    background-position: center;
-
-    /* flexbox nous sert à disposer correctement les éléments de ce bloc verticalement */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#bloc_droite {
-    /* pour éviter que mes articles dépassent / "sortent" du bloc de droite, on peut utiliser overflow: hidden */
-    /* overflow-y: scroll précise qu'on veut une barre de scroll uniquement à la verticale */
-    overflow-y: scroll;
+main {
+    margin-left: 4em;
 }
 
 section {

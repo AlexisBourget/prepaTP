@@ -40,9 +40,6 @@
 }
 
 @media screen and (max-width: 600px) {
-    .row.number2 {
-        flex-wrap: wrap;
-    }
     .card {
        width: 90%;
     }
