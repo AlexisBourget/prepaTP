@@ -1,0 +1,152 @@
+.wrapper {
+    display: flex;
+}
+
+#bloc_gauche, 
+#bloc_droite {
+    width: 50%;
+    
+    /* pour qu'un bloc occupe toute la hauteur de la fenêtre du navigateur : */
+    height: 100vh;
+
+    /* l'unité vh = Viewport Height */
+    /* l'unité vw = Viewport Width */
+}
+
+#bloc_gauche {
+    padding: 25px;
+    background-image: url("../images/nicole.jpg");
+
+    /* background-size: cover permet d'indiquer que l'image doit "couvrir" toute la largeur dispobible (elle sera rognée verticalement si ça dépasse) */
+    background-size: cover;
+
+    /* background-position: center nous permet de centrer l'image horizontalement et verticalement */
+    background-position: center;
+
+    /* flexbox nous sert à disposer correctement les éléments de ce bloc verticalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#bloc_droite {
+    /* pour éviter que mes articles dépassent / "sortent" du bloc de droite, on peut utiliser overflow: hidden */
+    /* overflow-y: scroll précise qu'on veut une barre de scroll uniquement à la verticale */
+    overflow-y: scroll;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 50%;
+    border: 1px solid #eaeaea;
+    padding: 25px;
+}
+
+.article__title {
+    margin-top: 10px;
+}
+
+.article__image {
+    width: 30px;
+    /* float: left; */
+    margin-right: 5px;
+}
+
+.article__metadata {
+    font-size: 0.7em;
+    vertical-align: baseline;
+    display: inline;
+}
+
+.article__description {
+    font-size: 0.9em;
+}
+
+.article__category {
+    padding: 3px 10px;
+    background-color: gray;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.article__category--work {
+    background-color: #0766F0;
+}
+
+.article__category--team {
+    background-color: #DC5E53;
+}
+
+.article__category--news {
+    background-color: #98DC62;
+}
+
+.title__image {
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.title__text {
+    color: white;
+    text-transform: uppercase;
+    width: 250px;
+    line-height: 1;
+}
+
+.intro {
+    background-color: rgba(202, 202, 202, 0.397);
+    color: white;
+    text-align: right;
+    padding: 25px;
+    padding-left: 100px;
+
+    /* on rajoute une ombre sur le texte pour augmenter son contraste */
+    text-shadow: 1px 1px 2px #000;
+}
+
+.intro__italic {
+    font-style: italic;
+    font-weight: 400;
+
+    /* rem fonctionne comme em, mais on se base sur la taille de la police "de base" */
+    /* dans un h2, 1rem = taille de la police de taille normale sur notre page */
+    /* dans un h2, 1em = taille de la police de taille h2 */
+    font-size: 1rem;
+}
+
+.intro__paragraph {
+    font-size: 0.9em;
+}
+
+.navigation_list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: right;
+
+    /* on rajoute une ombre sur le texte pour augmenter son contraste */
+    text-shadow: 1px 1px 2px #000;
+}
+
+.navigation__list__item {
+    display: inline;
+    margin: 5px;
+}
+
+.navigation__list__item a {
+    color: white;
+}
+
+.bloc_droite__title {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 10px;
+    padding-left: 25px;
+}

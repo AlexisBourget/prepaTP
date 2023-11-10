@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prépa TP - Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../css/advices.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Prépa TP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> 
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./todo.html">TO DO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./inspiration.html">Inspiration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./advices.html">Advices</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="deroulanta" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trello</a>
+                            <div class="dropdown-menu" aria-labelledby="deroulanta">
+                            <a class="dropdown-item" href="https://trello.com/invite/b/gmdQL4h5/ATTId18bf76428e2ffa238219d08b4f17df29D3/prepa-tp">Prépa TP</a>
+                            <button class="dropdown-item" type="button">Outils dev</button>
+                            <span class="dropdown-item-text">Orga</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="deroulantb" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Liens</a>
+                            <div class="dropdown-menu" aria-labelledby="deroulantb">
+                            <a class="dropdown-item" href="#">Drive</a>
+                            <button class="dropdown-item" type="button">Kourou</button>
+                            <span class="dropdown-item-text">Docs officiels</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Résultats à venir</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <main>
+        <h2>Les derniers conseils des alumni O'Clock</h2>
+            <p class="pComment">Les conseils des alumni O'Clock sont précieux, ils sont là pour vous aider à réussir votre formation. N'hésitez pas à les suivre !</p>
+        <section>
+            <article class="article">
+                <span class="article__category article__category--team">CP3</span>
+                <h3 class="article__title">Intégration d'une page avec un design responsive </h3>
+                <img class="article__image" src="../images/etudiant1.png" alt="Photo de profil de John Marchill">
+                <p class="article__metadata"><strong>John Marchill</strong> le <time datetime="2019-07-21">21 Juillet 2023</time></p>
+                <p class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quia eos hic earum dolorum corrupti quae? Aspernatur, placeat quos. Adipisci quia ipsum architecto. Deserunt placeat voluptatum ut similique. Quaerat, totam.</p>
+                <a href="">Continue reading</a>
+            </article>
+            <article class="article">
+                <span class="article__category article__category--news">CP5</span>
+                <h3 class="article__title">Création d'un MCD</h3>
+                <img class="article__image" src="../images/etudiant4.png" alt="Photo de profil de Paul Darson">
+                <p class="article__metadata"><strong>Paul Darson</strong> le <time datetime="2023-02-14">14 Février 2023</time></p>
+                <p class="article__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error veritatis eligendi explicabo perspiciatis, doloremque in tempore aspernatur earum quo rem sit iusto, velit consequuntur facere recusandae vitae quibusdam. Fugiat.</p>
+                <a href="">Continue reading</a>
+            </article>
+            <article class="article">
+                <span class="article__category article__category--team">CP1</span>
+                <h3 class="article__title">Conception des wireframes mobile avec commentaires</h3>
+                <img class="article__image" src="../images/etudiant2.png" alt="Photo de profil de Bruce Ékoute">
+                <p class="article__metadata"><strong>Bruce Ékoute</strong> le <time datetime="2022-06-18">18 Juin 2022</time></p>
+                <p class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt beatae accusamus voluptas voluptatibus deleniti ut libero eaque, quasi laudantium alias ullam unde maiores adipisci facere, perspiciatis delectus. Expedita, dicta sint.</p>
+                <a href="">Continue reading</a>
+            </article>
+            <article class="article">
+                <span class="article__category article__category--work">CP6</span>
+                <h3 class="article__title">Mise en place du fichier .gitignore pour ne pas publier le .env</h3>
+                <img class="article__image" src="../images/etudiant3.png" alt="Photo de profil d'Otis">
+                <p class="article__metadata"><strong>Otis</strong> le <time datetime="2022-11-08">8 Novembre 2022</time></p>
+                <p class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consectetur ab asperiores magnam sint nesciunt quas natus laudantium, autem, suscipit, voluptatibus accusantium facilis tempora. Vero eum officia aliquam eaque quia!</p>
+                <a href="">Continue reading</a>
+            </article>
+            <article class="article">
+                <span class="article__category article__category--team">CP7</span>
+                <h3 class="article__title">Mise en place de la sécurité côté back </h3>
+                <img class="article__image" src="../images/etudiant4.png" alt="Photo de profil de John Marchill">
+                <p class="article__metadata"><strong>John Marchill</strong> le <time datetime="2019-07-21">21 Juillet 2019</time></p>
+                <p class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quia eos hic earum dolorum corrupti quae? Aspernatur, placeat quos. Adipisci quia ipsum architecto. Deserunt placeat voluptatum ut similique. Quaerat, totam.</p>
+                <a href="">Continue reading</a>
+            </article>
+            <article class="article">
+                <span class="article__category article__category--news">CP1</span>
+                <h3 class="article__title">Le pair-programming pour les noobs</h3>
+                <img class="article__image" src="../images/etudiant5.png" alt="Photo de profil de Paul Darson">
+                <p class="article__metadata"><strong>Paul Darson</strong> le <time datetime="2023-02-14">14 Février 2023</time></p>
+                <p class="article__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus error veritatis eligendi explicabo perspiciatis, doloremque in tempore aspernatur earum quo rem sit iusto, velit consequuntur facere recusandae vitae quibusdam. Fugiat.</p>
+                <a href="">Continue reading</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+          <span class="text-muted">Créé sérieusement sans se prendre au sérieux  - Alexis Bourget</span>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="../js/chuckNorris.js"></script>
+    <script src="../js/imgInspiration.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

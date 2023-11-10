@@ -44,7 +44,10 @@
         flex-wrap: wrap;
     }
     .card {
-        width: 90%;
+       width: 90%;
+    }
+    .pComment {
+        display: none;
     }
 }
 
@@ -77,7 +80,7 @@ h1 {
     font-size:12vw;
 }
 
-.pHorizon {
+.pComment {
     font-weight: 800;
     text-align: right;
 }
